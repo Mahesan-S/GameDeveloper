@@ -706,12 +706,20 @@ section {
   aspect-ratio: 16 / 9;
 }
 
-/* VERTICAL — portrait 9:16 (for mobile games) */
+/* VERTICAL — portrait (mobile games) */
 .project-video-wrap.vertical {
   aspect-ratio: 9 / 16;
-  max-width: 280px;
+  max-width: 320px;
   margin: 0 auto;
 }
+
+.project-video-wrap.vertical video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* ← changed from cover to contain */
+  background: #000;     /* fills the empty sides with black */
+}
+
 
 .project-num {
   font-family: "Bebas Neue", sans-serif;
