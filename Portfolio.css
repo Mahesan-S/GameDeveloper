@@ -701,6 +701,18 @@ section {
   display: block;
 }
 
+/* HORIZONTAL — landscape 16:9 (default for PC/console games) */
+.project-video-wrap.horizontal {
+  aspect-ratio: 16 / 9;
+}
+
+/* VERTICAL — portrait 9:16 (for mobile games) */
+.project-video-wrap.vertical {
+  aspect-ratio: 9 / 16;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
 .project-num {
   font-family: "Bebas Neue", sans-serif;
   font-size: 4rem;
